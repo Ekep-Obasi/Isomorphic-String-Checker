@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body  {
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 300px;
+  border-radius: 35px;
+  background-color: burlywood;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+button{
+  margin-top: 34px;
+  padding: 0.55rem;
+  background-color: green;
+  margin-left: 2px;
+  border: 1px solid green;
+  border-radius: 9px;
+}
+
+.output {
+  margin-top: 12px;
+  height: 25px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: green ;
+}
+
+@media  (max-width: 1500px){
+
+  .container  {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .inputs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .strInput  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  input {
+    width: 95%;
+    padding: auto;
+  } 
+
+  button  {
+    margin-top: 12px;
+  }
+
+  input::placeholder {
+    font-size: 14px;
+    color: green ;
+  }
+}
+@media  (max-width: 900px){
+  .container  {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .inputs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .strInput  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input {
+    width: 95%;
+    padding: auto;
+  } 
+
+  button  {
+    margin-top: 6px;
+  }
+
+  input::placeholder {
+    font-size: 14px;
+    color: green ;
+  }
+
+  .output{
+    margin-top: 5px ;
+  }
+}
